@@ -1,0 +1,69 @@
+@font-face {
+    font-family: chillax-med;
+    src: url(Chillax_Complete/Fonts/OTF/Chillax-Medium.otf);
+}
+
+@font-face {
+    font-family: chillax-reg;
+    src: url(Chillax_Complete/Fonts/OTF/Chillax-Regular.otf);
+}
+
+@font-face {
+    font-family: author-bold;
+    src: url(Author_Complete/Fonts/OTF/Author-Bold.otf);
+}
+
+.categories {
+    margin-bottom: 12px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    background-color: goldenrod;
+    width: 100%;
+    height: 75px;
+    font-size: 24px;
+    font-family: chillax-med;
+    border-radius: 9px;
+    box-shadow: 3px 3px dimgray;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px 12px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    background-color:goldenrod;
+    width: 100%;
+    height: 125px;
+    font-size: 24px;
+    font-family: chillax-reg;
+    border-radius: 9px;
+    box-shadow: 3px 3px dimgray;
+}
+
+body {
+    text-align: center;
+    padding: 32px;
+    background-color:ivory;
+    color: #262626;;
+}
+
+h1 {
+    font-family: author-bold;
+    font-size: 72px;
+    margin-top: 0;
+    text-shadow: 3px 3px goldenrod;
+    color: #161616;
+}
