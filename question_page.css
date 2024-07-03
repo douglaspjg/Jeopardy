@@ -1,0 +1,74 @@
+@font-face {
+    font-family: cabinet-bold;
+    src: url(../Fonts/Cabinet/OTF/CabinetGrotesk-Bold.otf);
+}
+
+* {
+    text-align: center;
+    background-color:ivory;
+    font-family: cabinet-bold;
+    color: #262626;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 75%;
+    transform: translate(17.5%);
+}
+
+.question {
+    display: block;
+    top: 200rem;
+    background: none;
+    width: fit-content;
+    transform: translateY(33vh);
+}
+
+.answer-hover {
+    transform: translateY(36vh);
+    background: none;
+    width: fit-content;
+}
+
+.hidden-answer {
+    display: none;
+    width: fit-content;
+}
+
+.answer-hover:hover {
+    cursor: pointer;
+}
+
+.answer-hover:hover + .hidden-answer {
+    display: block;
+    transform: translateY(40vh);
+}
+
+.back-button {
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+}
+
+/* .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 1.5px solid green;
+    height: 100vh;
+    z-index: 100;
+} */

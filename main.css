@@ -1,16 +1,16 @@
 @font-face {
     font-family: chillax-med;
-    src: url(Chillax_Complete/Fonts/OTF/Chillax-Medium.otf);
+    src: url(Fonts/Chillax_Complete/OTF/Chillax-Medium.otf);
 }
 
 @font-face {
     font-family: chillax-reg;
-    src: url(Chillax_Complete/Fonts/OTF/Chillax-Regular.otf);
+    src: url(Fonts/Chillax_Complete/OTF/Chillax-Regular.otf);
 }
 
 @font-face {
     font-family: author-bold;
-    src: url(Author_Complete/Fonts/OTF/Author-Bold.otf);
+    src: url(Fonts/Author_Complete/Fonts/OTF/Author-Bold.otf);
 }
 
 .categories {
@@ -57,7 +57,7 @@ body {
     text-align: center;
     padding: 32px;
     background-color:ivory;
-    color: #262626;;
+    color: #262626;
 }
 
 h1 {
@@ -67,3 +67,7 @@ h1 {
     text-shadow: 3px 3px goldenrod;
     color: #161616;
 } 
+
+a {
+    text-decoration: none;
+}
