@@ -53,6 +53,11 @@
     box-shadow: 3px 3px dimgray;
 }
 
+.clicked {
+    background-color: #262626;
+    color: #262626;
+}
+
 body {
     text-align: center;
     padding: 32px;

@@ -1,6 +1,11 @@
 @font-face {
     font-family: cabinet-bold;
-    src: url(../Fonts/Cabinet/OTF/CabinetGrotesk-Bold.otf);
+    src: url(Fonts/Cabinet/OTF/CabinetGrotesk-Bold.otf);
+}
+
+@font-face {
+    font-family: cabinet-xtra-bold;
+    src: url(Fonts/Cabinet/OTF/CabinetGrotesk-Extrabold.otf);
 }
 
 * {
@@ -34,6 +39,10 @@ body {
     background: none;
     width: fit-content;
     transform: translateY(33vh);
+}
+
+.this {
+    font-family: cabinet-xtra-bold;
 }
 
 .answer-hover {
