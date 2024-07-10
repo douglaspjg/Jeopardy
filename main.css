@@ -82,6 +82,14 @@ a {
     display: block;
 }
 
+button {
+    text-shadow: 3px 3px goldenrod;
+    color: rgba(111, 39, 179, 0.849);
+    font-family: chillax-reg;
+    font-size: 2.5rem;
+    transform: translateY(15vh);
+}
+
 a:hover {
     
 }

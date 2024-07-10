@@ -34,35 +34,34 @@ items.forEach(item => {
 
         // get the category the question was from
         const questions_category  = item.classList[1]
-        console.log(questions_category)
+        // get the currently stored list, and if there is none yet, make an empty one.
+        // You have to do this because every time the page is opened, the javascript
+        // run to see if there are any categories that should be updated
+        if (localStorage) {
+            if (localStorage.getItem('finsihed_categories') == null ) {
+                localStorage.setItem('finsihed_categories', '[]')
+            } 
+        } else {
+            console.log("You probably won't see this, but your browser does not support localStorage")
+        }
         // find out whether all other questions have been done yet or not 
         if (JSON.parse(localStorage.getItem('clicked_questions')).filter((item) => item.includes(questions_category)).length >= 3) {
-            // If they all have been done, we first want to know whether there already
-            // exists a list of categories that have been filled (b/c if there isn't, we
-            // need to make one before we add anything to it)
-            if (localStorage) {
-                if (localStorage.getItem('finsihed_categories') == null ) {
-                    // initialize the list with only this category in it because it has
-                    // been finsihed if we are this deep in the nested loops
-                    localStorage.setItem('finsihed_categories', JSON.stringify(JSON.parse('[]').push(questions_category)))
-                } else {
-                    // if there is already a list, then we just have to add our item by
-                    // getting the OG list, JSON parsing it, adding it to the parsed
-                    // JSON, and reconverting it to a string before updating the state
-                    // in localStorage
-                    var og_list = JSON.parse(localStorage.getItem('finsihed_categories'))
-                    // to the parsed version, push the id of the new element
-                    if (!og_list.includes(questions_category)) {
-                        og_list.push(questions_category)
-                    }
-                    // make this new updated parsed version the localStorage version
-                    localStorage.setItem('finsihed_categories', JSON.stringify(og_list))
-                }
-            } else {
-                console.log("You probably won't see this, but your browser does not support localStorage")
-            }      
+        //    console.log(JSON.parse(localStorage.getItem('clicked_questions')).filter((item) => item.includes(questions_category)))
+            // If they all have been done, then we just have to add our item by
+            // getting the OG list, JSON parsing it, adding it to the parsed
+            // JSON, and reconverting it to a string before updating the state
+            // in localStorage
+            var og_list = JSON.parse(localStorage.getItem('finsihed_categories'))
+            // console.log(localStorage.getItem('finsihed_categories'))
+            // to the parsed version, push the id of the new element
+           // console.log(og_list)
+            if (!og_list.includes(questions_category)) {
+                og_list.push(questions_category)
+            }
+            // make this new updated parsed version the localStorage version
+            localStorage.setItem('finsihed_categories', JSON.stringify(og_list))
         } else {
-            // otherwise, the category hasn't been finished and we don't need to do anything
+            console.log("You probably won't see this, but your browser does not support localStorage")
         }
     })
 })
@@ -79,3 +78,7 @@ finsihed_categories.forEach(id => {
     elem.classList.add("clicked")
 })
 
+function reset() {
+    localStorage.clear();
+    window.location.reload();
+}
