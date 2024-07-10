@@ -4,6 +4,18 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
+  <!-- The fully articulated version might have some way to reset all
+       links so that they return to their original styles, and also
+       have some javascript such that when all of the questions in a
+       category have been done, the title also gets the same styling. -->
+  <!-- The simplified version will allow us to actualy get through
+       course and so that kids could go home and show their parents
+       what they have created. My hope is to spark interest, not
+       create pro's -->
+  <!-- After you've created the simplified version with very limited
+       functionality, make the CSS the fun part, because that is the
+       way you take a website from looking old and primal to clean
+       and modern -->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,53 +27,52 @@
   <body>
     <h1>Jeopardy</h1>
     <div class="grid categories">
-      <div class="category">lights</div>
-      <div class="category">camera</div>
-      <div class="category">action</div>
-      <div class="category">cut</div>
+      <div class="category" id="lights">lights</div>
+      <div class="category" id="camera">camera</div>
+      <div class="category" id="action">action</div>
     </div>
     <div class="grid">
-      <a href="Questions_pages/lights_questions/lights200.html"
-        ><div class="item lights">$200</div></a
-      ><a href="Questions_pages/camera_questions/camera200.html"
-        ><div class="item camera">$200</div></a
-      ><a href="Questions_pages/action_questions/action200.html"
-        ><div class="item action">$200</div></a
-      ><a href="Questions_pages/cut_questions/cut200.html">
-        <div class="item cut">$200</div></a
+      <a
+        href="Questions_pages/lights_questions/lights200.html"
+        class="item lights" id="item lights$200"
+        >$200</a
+      ><a
+        href="Questions_pages/camera_questions/camera200.html"
+        class="item camera" id="item camera$200"
+        >$200</a
+      ><a
+        href="Questions_pages/action_questions/action200.html"
+        class="item action" id="item action$200"
+        >$200</a
       >
 
-      <a href="Questions_pages/lights_questions/lights400.html"
-        ><div class="item lights">$400</div></a
-      ><a href="Questions_pages/camera_questions/camera400.html"
-        ><div class="item camera">$400</div></a
-      ><a href="Questions_pages/action_questions/action400.html"
-        ><div class="item action">$400</div></a
-      ><a href="Questions_pages/cut_questions/cut400.html"
-        ><div class="item cut">$400</div></a
+      <a
+        href="Questions_pages/lights_questions/lights400.html"
+        class="item lights" id="item lights$400"
+        >$400</a
+      ><a
+        href="Questions_pages/camera_questions/camera400.html"
+        class="item camera" id="item camera$400"
+        >$400</a
+      ><a
+        href="Questions_pages/action_questions/action400.html"
+        class="item action" id="item action$400"
+        >$400</a
       >
 
-      <a href="Questions_pages/lights_questions/lights600.html">
-        <div class="item lights">$600</div></a
-      ><a href="Questions_pages/camera_questions/camera600.html"
-        ><div class="item camera">$600</div></a
-      ><a href="Questions_pages/action_questions/action600.html"
-        ><div class="item action">$600</div></a
-      ><a href="Questions_pages/cut_questions/cut600.html"
-        ><div class="item cut">$600</div></a
+      <a
+        href="Questions_pages/lights_questions/lights600.html"
+        class="item lights" id="item lights$600"
       >
-
-      <a href="Questions_pages/lights_questions/lights900.html"
-        ><div class="item lights">$900</div></a
-      >
-      <a href="Questions_pages/camera_questions/camera900.html">
-        <div class="item camera">$900</div></a
-      >
-      <a href="Questions_pages/action_questions/action900.html"
-        ><div class="item action">$900</div></a
-      >
-      <a href="Questions_pages/cut_questions/cut900.html"
-        ><div class="item cut">$900</div></a
+        $600</a
+      ><a
+        href="Questions_pages/camera_questions/camera600.html"
+        class="item camera" id="item camera$600"
+        >$600</a
+      ><a
+        href="Questions_pages/action_questions/action600.html"
+        class="item action" id="item action$600"
+        >$600</a
       >
     </div>
     <script src="index.js" async defer></script>

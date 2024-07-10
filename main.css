@@ -30,11 +30,13 @@
     font-family: chillax-med;
     border-radius: 9px;
     box-shadow: 3px 3px dimgray;
+    aspect-ratio: 1;
+    color: rgba(111, 18, 197, 0.89);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 8px 12px;
 }
 
@@ -51,18 +53,20 @@
     font-family: chillax-reg;
     border-radius: 9px;
     box-shadow: 3px 3px dimgray;
+    aspect-ratio: 1;
+    color: rgba(111, 39, 179, 0.671);
 }
 
 .clicked {
-    background-color: #262626;
-    color: #262626;
+    background-color: #696969;
+    color: #383838;
 }
 
 body {
     text-align: center;
     padding: 32px;
     background-color:ivory;
-    color: #262626;
+    /* color: #262626; */
 }
 
 h1 {
@@ -70,9 +74,18 @@ h1 {
     font-size: 72px;
     margin-top: 0;
     text-shadow: 3px 3px goldenrod;
-    color: #161616;
+    color: rgba(111, 39, 179, 0.849);;
 } 
 
 a {
     text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    
+}
+
+a:visited {
+    
 }
